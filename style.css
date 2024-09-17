@@ -1,0 +1,38 @@
+main {
+  width: 50%;
+  margin: auto;
+  background-image: linear-gradient(to bottom right, #181c14 0%, #3c3d37 40%, #697565 60%, #ecdfcc 100%);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+
+  background-size: 250% 250%;
+  animation: tim 5s linear infinite alternate;
+}
+.scoreboard .tim {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.scoreboard .tim button {
+  background-color: green;
+  border: none;
+  padding: 10px;
+  margin: 5px auto;
+  width: 50%;
+  font-size: 1.4em;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.scoreboard .tim p {
+  font-size: 1.5em;
+}
+@keyframes tim {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
